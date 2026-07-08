@@ -6,12 +6,5 @@
   "scripts": {
     "build": "pnpm --filter client build",
     "dev": "pnpm --parallel --filter server --filter client dev"
-  },
-  "devEngines": {
-    "packageManager": {
-      "name": "pnpm",
-      "version": "^11.10.0",
-      "onFail": "download"
-    }
   }
 }
