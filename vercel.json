@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "buildCommand": "pnpm build",
+  "outputDirectory": "client/dist",
+  "functions": {
+    "api/index.ts": {
+      "runtime": "@vercel/node"
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "/api/index.ts"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
