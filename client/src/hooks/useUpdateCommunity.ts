@@ -5,8 +5,6 @@ import {
 
 import { updateSubreddit } from "@/api/community";
 
-import type { Subreddit } from "@/types/community";
-
 export function useUpdateSubreddit() {
 
     const queryClient =
